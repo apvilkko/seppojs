@@ -7,7 +7,8 @@
     "clean": "rimraf dist",
     "mkdir": "mkdirp dist",
     "transpile": "babel src --out-file dist/seppo.js",
-    "prepublish": "npm run clean && npm run mkdir && npm run transpile && node tools/packresources.js",
+    "pack": "node tools/packresources.js",
+    "prepublish": "npm run clean && npm run mkdir && npm run transpile && npm run pack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {

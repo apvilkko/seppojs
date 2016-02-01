@@ -1,9 +1,20 @@
 .seppo-avatar {
   position: fixed;
-  bottom: 0;
   right: 0;
   width: 139px;
   height: 128px;
+  overflow: hidden;
+}
+
+.seppo-slider {
+  bottom: -128px;
+	transition-property: bottom;
+	transition-duration: 1.5s;
+	transition-timing-function: cubic-bezier(.5, .12, .53, .9);
+}
+
+.seppo-slider.seppo-slider-up {
+  bottom: 0px;
 }
 
 .seppo-avatar {

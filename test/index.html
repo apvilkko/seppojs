@@ -12,9 +12,12 @@
         html, body {
           height: 100%;
         }
-        .content {
-          height: 100%;
+        body {
           background: #ccc;
+        }
+        .content {
+          float: left;
+          padding: 20px;
         }
       </style>
   </head>
@@ -23,7 +26,11 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="content">
-      <div>Hello world! Content here.</div>
+      <div>Hello Seppo!</div>
+      <ul>
+        <li><a href="#" onClick="SeppoJS.show()">show</a></li>
+        <li><a href="#" onClick="SeppoJS.hide()">hide</a></li>
+      </ul>
     </div>
 
 
