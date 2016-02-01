@@ -5,6 +5,12 @@ class Seppo {
   }
   activate() {
     console.log("activated!");
+    var el = document.createElement('div')
+    el.classList.add('seppo-wrap');
+    var seppo = document.createElement('div')
+    seppo.classList.add('seppo-avatar');
+    el.appendChild(seppo);
+    document.body.appendChild(el);
   }
 }
 

@@ -1,6 +1,6 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports"], factory);
+    define(['exports'], factory);
   } else if (typeof exports !== "undefined") {
     factory(exports);
   } else {
@@ -11,7 +11,7 @@
     global.index = mod.exports;
   }
 })(this, function (exports) {
-  "use strict";
+  'use strict';
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -22,6 +22,12 @@
 
     activate() {
       console.log("activated!");
+      var el = document.createElement('div');
+      el.classList.add('seppo-wrap');
+      var seppo = document.createElement('div');
+      seppo.classList.add('seppo-avatar');
+      el.appendChild(seppo);
+      document.body.appendChild(el);
     }
 
   }
