@@ -1,0 +1,28 @@
+$seppo-height: 128px;
+$seppo-width: 139px;
+
+.seppo-avatar {
+  position: fixed;
+  right: 0;
+  width: $seppo-width;
+  height: $seppo-height;
+  overflow: hidden;
+}
+
+.seppo-slider {
+  bottom: -$seppo-height;
+	transition-property: bottom;
+	transition-duration: 1.5s;
+	transition-timing-function: cubic-bezier(.5, .12, .53, .9);
+  &.seppo-slider-up {
+    bottom: 0px;
+  }
+  &.seppo-slider-eyes {
+    bottom: -$seppo-height * 0.55;
+  }
+}
+
+// this will be base64'd
+.seppo-avatar {
+  background: url(../resources/seppo-avatar.png);
+}
