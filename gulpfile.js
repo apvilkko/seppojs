@@ -9,11 +9,9 @@ const babel = require('gulp-babel');
 const config = {
   paths: {
     src: {
-      root: './src/',
       sass: './src/seppo.scss',
       js: './src/**/*.js',
       main: './src/seppo.js',
-      images: './resources/seppo_128.png'
     },
     dist: './dist/'
   }
